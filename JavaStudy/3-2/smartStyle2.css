@@ -35,7 +35,12 @@
         width: 150px;
     }
 
+    .header {
+        width: 150px;
+    }
+
     .left {
+        width: 150px;
         float: none;
     }
 
@@ -47,7 +52,23 @@
         float: none;
     }
 
+    .content-top-left-top {
+        width: 150px;
+    }
+
+    .content-top-left-bottom {
+        width: 150px;
+    }
+
     .content-top-right {
+        width: 150px;
         float: none;
+    }
+    .content-bottom {
+        width: 150px;
+    }
+
+    .footer {
+        width: 150px;
     }
 }
