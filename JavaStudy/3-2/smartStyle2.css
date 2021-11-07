@@ -20,6 +20,14 @@
         width: 125px;
     }
 
+    .content-top-left-top {
+        width: 125px;
+    }
+
+    .content-top-left-bottom {
+        width: 125px;
+    }
+
     .content-bottom {
         width: 200px;
     }
@@ -48,6 +56,11 @@
         float: none;
     }
 
+    .content-top-right {
+        width: 150px;
+        float: none;
+    }
+
     .content-top-left {
         float: none;
     }
@@ -60,10 +73,6 @@
         width: 150px;
     }
 
-    .content-top-right {
-        width: 150px;
-        float: none;
-    }
     .content-bottom {
         width: 150px;
     }

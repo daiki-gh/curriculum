@@ -38,6 +38,13 @@
     background-color: ;
 }  */
 
+.content-top-right {
+    width: 100px;
+    height: 150px;
+    background-color: #ff9e6b;
+    float: right;
+} 
+
 .content-top-left {
     float: left;
 } 
@@ -52,13 +59,6 @@
     width: 150px;
     height: 100px;
     background-color: #0093b7;
-} 
-
-.content-top-right {
-    width: 100px;
-    height: 150px;
-    background-color: #ff9e6b;
-    float: left;
 } 
 
 .content-bottom {
