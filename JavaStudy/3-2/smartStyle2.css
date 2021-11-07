@@ -15,10 +15,6 @@
     .content-top-right {
         width: 75px;
     }
-    
-    .content-top-left {
-        width: 125px;
-    }
 
     .content-top-left-top {
         width: 125px;
@@ -39,10 +35,6 @@
 
 /* ウィンドウ幅が最大479pxの場合 */
 @media screen and (max-width: 479px) {
-    .wrapper {
-        width: 150px;
-    }
-
     .header {
         width: 150px;
     }
