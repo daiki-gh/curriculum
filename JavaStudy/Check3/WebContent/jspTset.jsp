@@ -11,12 +11,10 @@
 <body>
 <%@ include file="header.jsp" %>
 	<div id="form">
-	<form>
-		<label for="name">name</label>
-		<input type="text" id="name"><br>
-		<label for="id">id</label>
-		<input type="text" id="id">
-	</form>
+	<table>
+		<tr><th>name</th><td><input type="text" id="name"></td></tr>
+		<tr><th>id</th><td><input type="text" id="id"></td></tr>
+	</table>
 	</div>
 <%@ include file="footer.jsp" %>
 </body>
