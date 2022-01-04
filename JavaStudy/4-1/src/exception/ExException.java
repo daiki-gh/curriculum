@@ -1,6 +1,5 @@
 package exception;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 /**
@@ -105,10 +104,7 @@ public class ExException {
      */
     // ここへ記述
     private static void question1() throws NullPointerException {
-    	if (Objects.isNull(null)) {
-			throw new NullPointerException("CONST_MSG_NULLPO");
-		}
-
+		throw new NullPointerException("ヌルポです。");
     }
 
     /**
