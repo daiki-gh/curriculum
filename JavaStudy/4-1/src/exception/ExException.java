@@ -104,7 +104,7 @@ public class ExException {
      */
     // ここへ記述
     private static void question1() throws NullPointerException {
-		throw new NullPointerException("ヌルポです。");
+		throw new NullPointerException(CONST_MSG_NULLPO);
     }
 
     /**
