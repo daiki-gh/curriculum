@@ -211,7 +211,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
                     preparedStatement.setString(1, empId);
 
                     // FIXME Step-5-7: preparedStatementよりSQL(SELECT文)を実行し、resultSetへ結果を格納しなさい。
-                    resultSet = preparedStatement.executeQuery();
+                    this.resultSet = preparedStatement.executeQuery();
 
                     Logger.log(new Throwable(), "SQL: " +  this.preparedStatement.toString());
                 }

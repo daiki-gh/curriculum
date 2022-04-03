@@ -46,7 +46,7 @@
                 session.invalidate();
             }
 
-            if (requestStatus < 2 && message.isEmpty()) {
+            if (requestStatus < 2 && !message.isEmpty()) {
                 // ログインエラー時
                 ResponseBean rb = (ResponseBean) session.getAttribute("responseBean");
                 if (Objects.nonNull(rb)) {

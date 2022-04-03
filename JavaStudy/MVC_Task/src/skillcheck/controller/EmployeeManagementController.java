@@ -43,7 +43,7 @@ public final class EmployeeManagementController extends BaseServlet {
 
         // FIXME Step-4-1: 社員情報管理サービスのインスタンスを生成しなさい。
         // Tips: 定義済みフィールド変数を使用
-        EmployeeManagementService ems = new EmployeeManagementService();
+        ems = new EmployeeManagementService();
 
         boolean hasSession = false;
 
@@ -137,7 +137,7 @@ public final class EmployeeManagementController extends BaseServlet {
 
             // FIXME Step-4-3: 社員情報管理サービスのインスタンス変数を生成しなさい。
             // Tips: 定義済みフィールド変数を使用
-            EmployeeManagementService ems = new EmployeeManagementService();
+            ems = new EmployeeManagementService();
 
             reqEmpIdList = rmdGetEmpIdList.apply(request);
             reqEmpIdList.forEach(id -> Logger.log(new Throwable(), "reqEmpId = " + id));
@@ -166,7 +166,7 @@ public final class EmployeeManagementController extends BaseServlet {
             // FIXME Step-4-4: 取得結果（ResponseBean）をjspへ渡すための処理を記述しなさい。
             // Tips1: リクエストへレスポンス情報をセット
             // Tips2: キー名は「CONST_REQUST_KEY_FOR_RESPONSE_BEAN」使用
-            request.setAttribute("CONST_REQUST_KEY_FOR_RESPONSE_BEAN", "ResponseBean");
+            request.setAttribute("CONST_REQUST_KEY_FOR_RESPONSE_BEAN", this.responseBean);
 
             Logger.log(new Throwable(), "遷移先 = " + this.destinationTarget);
 
