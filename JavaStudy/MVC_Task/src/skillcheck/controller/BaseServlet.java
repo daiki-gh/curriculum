@@ -53,11 +53,11 @@ public abstract class BaseServlet extends HttpServlet {
      * コンストラクタ
      */
     public BaseServlet() {
-        Logger.logStart(new Throwable());
+        Logger.logStart(new Throwable());	//ログ開始
         // レスポンスデータはnullの可能性を潰す
         responseBean = new ResponseBean();
         destinationTarget = null;
-        Logger.logEnd(new Throwable());
+        Logger.logEnd(new Throwable());		//ログ終了
     }
 
     /**
