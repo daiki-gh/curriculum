@@ -166,7 +166,7 @@ public final class EmployeeManagementController extends BaseServlet {
             // FIXME Step-4-4: 取得結果（ResponseBean）をjspへ渡すための処理を記述しなさい。
             // Tips1: リクエストへレスポンス情報をセット
             // Tips2: キー名は「CONST_REQUST_KEY_FOR_RESPONSE_BEAN」使用
-            request.setAttribute("CONST_REQUST_KEY_FOR_RESPONSE_BEAN", this.responseBean);
+            request.setAttribute(CONST_REQUST_KEY_FOR_RESPONSE_BEAN, this.responseBean);
 
             Logger.log(new Throwable(), "遷移先 = " + this.destinationTarget);
 
