@@ -20,11 +20,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-        .authorizeRequests()
-        .antMatchers("/login", "/login-error").permitAll()
-        .antMatchers("/**").hasRole("USER")
-        .and()
-        .formLogin()
+        .authorizeRequests()                                        //アクセスを制限（URL毎の権限管理の設定）
+        .antMatchers("/login", "/login-error").permitAll()          ///login,/login-errorへのアクセスは誰でもOK（premitAll）
+        .antMatchers("/**").hasRole("USER")                         //それ以外のアクセスはUSERのみ
+        .and()                                                      //authorizeRequestsの設定を終了させて、別の設定を続ける(メソッドチェーンを終わらせずに)
+        .formLogin()                                                //formでログイン認証
         .loginPage("/login").failureUrl("/login-error");
     }
 
@@ -33,7 +33,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
-        .userDetailsService(userService)
+        .userDetailsService(userService)                            //userServiceを認証
         .passwordEncoder(passwordEncoder());
 
         if (userService.findAllList().isEmpty()) {

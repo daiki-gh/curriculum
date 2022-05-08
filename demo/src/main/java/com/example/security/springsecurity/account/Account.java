@@ -26,7 +26,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 //実行時に宣言した各フィールド変数がカラムとして作成される
 //問１－１ DB設計に必要なアノテーションを記述
 @Entity
-@Table(name="accounts")
+@Table(name="accounts")                                                 //DBにaccountsテーブルを作成
 public class Account implements UserDetails {
 
     private static final long serialVersionUID = 1L;
